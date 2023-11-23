@@ -32,12 +32,12 @@ function lapReset() {
         if (sec < 10) sec = "0" + sec;
 
         li.appendChild(document.createTextNode(`Lap ${lapCount} ${min}:${sec}:${tenth}`));
-        document.getElementById("laps").prepend(li);
+        document.getElementById("lap").prepend(li);
     } else {
         time = 0;
         lapCount = 0;
         document.getElementById("time").innerHTML = "00:00:00";
-        document.getElementById("laps").innerHTML = "";
+        document.getElementById("lap").innerHTML = "";
     }
 }
 
